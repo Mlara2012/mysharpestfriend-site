@@ -56,7 +56,8 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
 .hero p.lede { font-size: 18px; color: var(--muted); max-width: 56ch; margin: 0 0 28px; }
 .btn { display: inline-block; background: var(--accent); color: var(--accent-ink); padding: 12px 20px; border-radius: var(--radius); text-decoration: none; font-weight: 600; font-size: 15px; }
 .btn:hover { filter: brightness(1.06); }
-.btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); margin-left: 8px; }
+.btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.cta-row { display: flex; flex-wrap: wrap; gap: 10px; }
 
 /* Sections */
 section { padding: clamp(40px, 6vw, 80px) 0; border-top: 1px solid var(--line); }
@@ -95,7 +96,7 @@ footer p { margin: 0 0 6px; max-width: 60ch; }
   .grid-3, .split { grid-template-columns: 1fr; gap: 20px; }
   nav ul { gap: 14px; font-size: 13px; }
   .brand-name { font-size: 17px; }
-  .btn-ghost { margin: 10px 0 0; }
+  .cta-row .btn { flex: 1 1 100%; text-align: center; }
 }
 @media (max-width: 420px) {
   nav .hide-sm { display: none; }
